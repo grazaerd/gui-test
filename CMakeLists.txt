@@ -9,8 +9,4 @@ add_subdirectory(${fltk})
 
 add_executable(gtest src/main.cpp)
 
-target_compile_options(fltk PRIVATE -w)
-
-target_include_directories(gtest SYSTEM PRIVATE ${fltk})
-
 target_link_libraries(gtest PRIVATE fltk)
